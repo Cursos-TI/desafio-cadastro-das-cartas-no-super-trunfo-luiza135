@@ -36,6 +36,36 @@ int main() {
     printf("area: %f\n", area);
     printf("PIB: %f\n", PIB);
     printf("numero de pontos turisticos: %d\n",numeroPT);
+
+    //CARTA 2
+
+    char codigocidade2[10]; char nome2[50]; int populacao2; float area2; float PIB2; int numeroPT2;
+    printf("Vamos cadastrar a SEGUNDA carta\n");
+    
+    printf("Digite codigo da cidade:\n");
+    scanf("%s",codigocidade2);
+    
+    printf("Digite nome:\n");
+    scanf("%s",nome2);
+
+    printf("Digite população:\n");
+    scanf("%d",&populacao2);
+
+    printf("Digite area:\n");
+    scanf("%f",&area2);
+
+    printf("Digite PIB:\n");
+    scanf("%f",&PIB2);
+
+    printf("Digite numero de pontos turisticos:\n");
+    scanf("%d",&numeroPT2);
+
+    printf("codigo da cidade: %s\n",codigocidade2);
+    printf("nome: %s\n",nome2);
+    printf("populacao %d\n", populacao2);
+    printf("area: %f\n", area2);
+    printf("PIB: %f\n", PIB2);
+    printf("numero de pontos turisticos: %d\n",numeroPT2);
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -47,3 +77,4 @@ int main() {
 
     return 0;
 }
+
