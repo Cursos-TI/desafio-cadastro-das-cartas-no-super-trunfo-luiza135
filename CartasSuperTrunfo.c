@@ -9,7 +9,7 @@
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    char codigocidade[10]; char nome[50]; int populacao; float area; float PIB; int numeroPT;
+    char codigocidade[10]; char nome[50]; int populacao; float area; float PIB; int numeroPT; float densidadePop; float PIBCap;
     printf("Vamos cadastrar a primeira carta\n");
     
     printf("Digite codigo da cidade:\n");
@@ -30,16 +30,22 @@ int main() {
     printf("Digite numero de pontos turisticos:\n");
     scanf("%d",&numeroPT);
 
+    PIBCap = PIB/populacao;
+    densidadePop = populacao/area;
+
     printf("codigo da cidade: %s\n",codigocidade);
     printf("nome: %s\n",nome);
     printf("populacao %d\n", populacao);
     printf("area: %f\n", area);
     printf("PIB: %f\n", PIB);
     printf("numero de pontos turisticos: %d\n",numeroPT);
+    printf("densidade populacional: %f\n", densidadePop);
+    printf("PIB per capita: %f\n", PIBCap);
+
 
     //CARTA 2
 
-    char codigocidade2[10]; char nome2[50]; int populacao2; float area2; float PIB2; int numeroPT2;
+    char codigocidade2[10]; char nome2[50]; int populacao2; float area2; float PIB2; int numeroPT2; float densidadePop2; float PIBCap2;
     printf("Vamos cadastrar a SEGUNDA carta\n");
     
     printf("Digite codigo da cidade:\n");
@@ -60,12 +66,17 @@ int main() {
     printf("Digite numero de pontos turisticos:\n");
     scanf("%d",&numeroPT2);
 
+    PIBCap = PIB/populacao;
+    densidadePop = populacao/area;
+
     printf("codigo da cidade: %s\n",codigocidade2);
     printf("nome: %s\n",nome2);
     printf("populacao %d\n", populacao2);
     printf("area: %f\n", area2);
     printf("PIB: %f\n", PIB2);
     printf("numero de pontos turisticos: %d\n",numeroPT2);
+    printf("densidade populacional: %f\n", densidadePop);
+    printf("PIB per capita: %f\n", PIBCap2);
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -77,4 +88,5 @@ int main() {
 
     return 0;
 }
+
 
